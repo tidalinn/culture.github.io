@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Культура для школьников</title>
+  <meta name="description" content="">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="preload" href="fonts/OpenSans-Regular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-Bold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-SemiBold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Lora-Regular.woff" as="font" crossorigin="anonymous">
+	<link href="fonts/iconfont/material-icons.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/reset.css">
+
+	<!-- slick -->
+	<link rel="stylesheet" href="script/slick/slick.css">
+	<link rel="stylesheet" href="script/slick/slick-theme.css">
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- файл стилей для слабовидящих -->
+	<link rel="stylesheet" href="css/visually_impaired.css">
+
+</head>
+<body>
+	<nav class="visually-impaired-navigation">
+
+		<div class="vertical-wrap">
+					<span class="visually-impaired-title">
+						Размер шрифта
+					</span>
+			<ul class="visually-impaired-font">
+				<li class="visually-impaired-font__item f-s-14" data-font="f-s-14">
+					А
+				</li>
+				<li class="visually-impaired-font__item f-s-18" data-font="f-s-18">
+					А
+				</li>
+				<li class="visually-impaired-font__item f-s-22" data-font="f-s-22">
+					А
+				</li>
+			</ul>
+		</div>
+
+		<div class="vertical-wrap">
+					<span class="visually-impaired-title">
+						Цвет сайта
+					</span>
+			<ul class="visually-impaired-color">
+				<li class="visually-impaired-color__item" data-color="">
+					Ц
+				</li>
+				<li class="visually-impaired-color__item b-c-b" data-color="b-c-b">
+					Ц
+				</li>
+				<li class="visually-impaired-color__item b-c-bl" data-color="b-c-bl">
+					Ц
+				</li>
+				<li class="visually-impaired-color__item b-c-y" data-color="b-c-y">
+					Ц
+				</li>
+				<li class="visually-impaired-color__item b-c-br" data-color="b-c-br">
+					Ц
+				</li>
+			</ul>
+		</div>
+
+		<div class="vertical-wrap">
+					<span class="visually-impaired-title">
+						Изображения
+					</span>
+			<ul class="visually-impaired-image">
+				<li class="visually-impaired-image__item visually-impaired-image__item--active" data-image="">
+					<i class="material-icons done__icon">done</i> Вкл.
+				</li>
+				<li class="visually-impaired-image__item" data-image="image-off">
+					<i class="material-icons clear__icon">clear</i> Выкл.
+				</li>
+			</ul>
+		</div>
+
+	</nav>
+
+	<header class="header">
+
+		<nav class="navigation">
+
+			<a href="index.html" class="logo-wrap">
+				<img src="./img/logo.png" alt="Логотип культуры для школьников" class="logo-image">
+				<span class="logo-title">
+					Культура<br> для школьников
+				</span>
+			</a>
+
+			<div class="search">
+				<input type="text" class="search__input" placeholder="Поиск">
+				<i class="material-icons search__icon">search</i>
+			</div>
+
+
+			<ul class="main-menu">
+				<li class="navigation__item">
+					<a href="index.html" class="navigation__link">Главная</a>
+				</li>
+				<li class="navigation__item">
+					<a href="news.html" class="navigation__link">Новости</a>
+				</li>
+				<li class="navigation__item">
+					Культура <i class="material-icons keyboard_arrow_down__icon">keyboard_arrow_down</i>
+
+					<ul class="sub-menu sub-menu--culture">
+						<li class="sub-menu__item">
+							<a href="/" class="sub-menu__link">
+								<i class="material-icons school__icon">school</i>
+								Культурное образование
+							</a>
+						</li>
+						<li class="sub-menu__item">
+							<a href="/" class="sub-menu__link">
+								<i class="material-icons school__icon">account_balance</i>
+								Культурная карта
+							</a>
+						</li>
+						<li class="sub-menu__item">
+							<a href="/" class="sub-menu__link">
+								<i class="material-icons school__icon">event</i>
+								Культурная афиша
+							</a>
+						</li>
+						<li class="sub-menu__item">
+							<a href="/" class="sub-menu__link">
+								<i class="material-icons school__icon">flag</i>
+								Моя Россия
+							</a>
+						</li>
+					</ul>
+
+				</li>
+				<li class="navigation__item">
+					Наставничество <i class="material-icons keyboard_arrow_down__icon">keyboard_arrow_down</i>
+
+					<ul class="sub-menu sub-menu--mentoring">
+						<li class="sub-menu__item">
+							<a href="/" class="sub-menu__link">
+								<i class="material-icons school__icon">group</i>
+								Наставники
+							</a>
+						</li>
+						<li class="sub-menu__item">
+							<a href="/" class="sub-menu__link">
+								<i class="material-icons school__icon">help</i>
+								Вопрос-ответ с наставником
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<button class="visually-impaired-menu-button">
+				<i class="material-icons school__icon">remove_red_eye</i>
+			</button>
+
+			<ul class="account">
+				<li class="account__item">
+					ivan_ivan_05 <i class="material-icons keyboard_arrow_down__icon">keyboard_arrow_down</i>
+
+					<ul class="sub-account">
+						<li class="triangle">
+
+						</li>
+						<li class="sub-account__item">
+							<a href="account.html" class="sub-account__link">
+								<i class="material-icons face__icon">face</i> Личный кабинет
+							</a>
+						</li>
+						<li class="sub-account__item">
+							<a href="customization.html" class="sub-account__link">
+								<i class="material-icons settings__icon">settings</i> Настройки
+							</a>
+						</li>
+						<li class="sub-account__item">
+							<a href="logout.html" class="sub-account__link">
+								<i class="material-icons login__icon">keyboard_return</i> Выйти
+							</a>
+						</li>
+					</ul>
+
+				</li>
+				<li class="account__item account__item--rate">
+				  <i class="material-icons star_rate__icon">star_rate</i>
+					4,9
+				</li>
+			</ul>
+
+		</nav>
+	</header>
+	<main class="main">
+		<section class="promo">
+			<h1 class="promo__h1">Культурно развлекательный проект</h1>
+			<span class="promo__title">
+				Изучай культуру в интерактивном формате
+			</span>
+
+			<div class="promo__slider">
+				<div class="promo__screen">
+
+				</div>
+				<span class="promo__title--slider">
+					Смотри вебинары и общайся  с наставниками!
+				</span>
+			</div>
+		</section>
+
+		<section class="map">
+			<h2 class="map__h2">
+				Российская онлайн-платформа
+			</h2>
+
+			<ul class="map__info">
+				<li class="map__info-item map__info-item--school">
+					<span class="map__info-item-count">
+						40 000
+					</span>
+					школ
+				</li>
+				<li class="map__info-item map__info-item--schoolboy">
+					<span class="map__info-item-count">
+						20 000 000
+					</span>
+					школьников
+				</li>
+				<li class="map__info-item map__info-item--region">
+					<span class="map__info-item-count">
+						85
+					</span>
+					регионов
+				</li>
+			</ul>
+
+			<img src="img/map.png" class="interactive-map">
+		</section>
+
+		<section class="partners">
+			<h2 class="partners__h2">
+				Партнеры
+			</h2>
+
+			<ul class="partners-list">
+				<li class="partners-list__item">
+					<img src="img/partner.png" alt="">
+				</li>
+				<li class="partners-list__item">
+					<img src="img/partner.png" alt="">
+				</li>
+				<li class="partners-list__item">
+					<img src="img/partner.png" alt="">
+				</li>
+
+				<li class="partners-list__item">
+					<img src="img/partner.png" alt="">
+				</li>
+				<li class="partners-list__item">
+					<img src="img/partner.png" alt="">
+				</li>
+				<li class="partners-list__item">
+					<img src="img/partner.png" alt="">
+				</li>
+
+				<li class="partners-list__item">
+					<img src="img/partner.png" alt="">
+				</li>
+				<li class="partners-list__item">
+					<img src="img/partner.png" alt="">
+				</li>
+			</ul>
+		</section>
+
+		<section class="last-news">
+			<h2 class="news__h2">
+				Последние новости
+			</h2>
+
+			<ul class="news-list">
+				<li class="news-list__item news-list__item--purple">
+					<img src="img/news-boy.png" class="news-list__image">
+					<span class="news-list__date">25 октября 2020</span>
+					<p class="news-list__description">
+						Смысл абсурда, творческие лаборатории и социолингвистика
+					</p>
+					<a href="https://www.google.ru/" class="news-list__link news-list__link--purple" target="_blank">Читать далее</a>
+				</li>
+				<li class="news-list__item news-list__item--blue">
+					<img src="img/news-girl.png" class="news-list__image">
+					<span class="news-list__date">25 октября 2020</span>
+					<p class="news-list__description">
+						Смысл абсурда, творческие лаборатории и социолингвистика
+					</p>
+					<a href="https://www.google.ru/" class="news-list__link news-list__link--blue" target="_blank">Читать далее</a>
+				</li>
+				<li class="news-list__item news-list__item--yellow">
+					<img src="img/news-boy-and-girl.png" class="news-list__image">
+					<span class="news-list__date">25 октября 2020</span>
+					<p class="news-list__description">
+						Смысл абсурда, творческие лаборатории и социолингвистика
+					</p>
+					<a href="https://www.google.ru/" class="news-list__link news-list__link--yellow" target="_blank">Читать далее</a>
+				</li>
+			</ul>
+		</section>
+
+		<section class="translation">
+			<h2 class="translation__h2">
+				Прямой эфир
+			</h2>
+
+			<ul class="translation-area">
+				<li class="translation-video">
+					<span class="translation-title">
+						Название вебинара
+					</span>
+					<img src="img/translation.png" alt="">
+				</li>
+				<li class="translation-message">
+					<span class="translation-title" style="text-align: center; padding-left: 0">
+						Комментарии
+					</span>
+					<img src="img/message.png" alt="" style="width: 330px;margin-top: 5px">
+				</li>
+			</ul>
+		</section>
+
+		<section class="poster">
+			<h2 class="poster__h2">
+				Афиша
+			</h2>
+
+			<ul class="events">
+				<li class="event__item">
+					<span class="events__date">18 ноября</span>
+					<img src="img/event-image.png" class="events__image">
+					<a href="/" class="event__link">Название мероприятия</a>
+				</li>
+				<li class="event__item">
+					<span class="events__date">18 ноября</span>
+					<img src="img/event-image.png" class="events__image">
+					<a href="/" class="event__link">Название мероприятия</a>
+				</li>
+				<li class="event__item">
+					<span class="events__date">18 ноября</span>
+					<img src="img/event-image.png" class="events__image">
+					<a href="/" class="event__link">Название мероприятия</a>
+				</li>
+			</ul>
+		</section>
+
+		<section class="mentor">
+			<h2 class="mentor__h2">
+				Наставники
+			</h2>
+
+			<ul class="mentors-list">
+				<li class="mentors-list__item">
+					<p class="mentors-list__image-wrap">
+						<img src="img/teacher.jpg" class="mentors-list__image">
+					</p>
+					<p class="mentors-list__info">
+						<span class="mentors-list__name">
+							Мария Иванова
+						</span>
+						<span class="mentors-list__address">
+							г. Москва, Школа №51
+						</span>
+					</p>
+				</li>
+				<li class="mentors-list__item">
+					<p class="mentors-list__image-wrap">
+						<img src="img/teacher.jpg" class="mentors-list__image">
+					</p>
+					<p class="mentors-list__info">
+						<span class="mentors-list__name">
+							Мария Иванова
+						</span>
+						<span class="mentors-list__address">
+							г. Москва, Школа №51
+						</span>
+					</p>
+				</li>
+				<li class="mentors-list__item">
+					<p class="mentors-list__image-wrap">
+						<img src="img/teacher.jpg" class="mentors-list__image">
+					</p>
+					<p class="mentors-list__info">
+						<span class="mentors-list__name">
+							Мария Иванова
+						</span>
+						<span class="mentors-list__address">
+							г. Москва, Школа №51
+						</span>
+					</p>
+				</li>
+				<li class="mentors-list__item">
+					<p class="mentors-list__image-wrap">
+						<img src="img/teacher.jpg" class="mentors-list__image">
+					</p>
+					<p class="mentors-list__info">
+						<span class="mentors-list__name">
+							Мария Иванова
+						</span>
+						<span class="mentors-list__address">
+							г. Москва, Школа №51
+						</span>
+					</p>
+				</li>
+			</ul>
+
+			<ul class="question-answer-list">
+				<li class="question-answer__item">
+
+					<p class="question-answer__image-wrap">
+						<img src="img/teacher.jpg" class="question-answer__image">
+					</p>
+
+					<p class="question-answer-list__dialog">
+
+						<span class="question-answer-list__question">
+							— Какой исторический персонаж был бы самым скучным при встрече в реальной жизни?
+						</span>
+
+						<span class="question-answer-list__answer-text-wrap">
+							<span class="question-answer-list__answer-mentor-name">
+								Мария Иванова
+							</span>
+
+							<span class="question-answer-list__answer-text-mentor-address">
+								г. Москва, Школа №51
+							</span>
+
+							<span class="question-answer-list__answer-text">
+								Даже в этом коротком фрагменте видно, что художественная гармония наблюдаема.
+								Расположение эпизодов точно приводит реформаторский пафос.
+								Обсценная идиома, несмотря на то, что все эти характерологические черты отсылают не к
+								единому образу нарратора, редуцирует гекзаметр, так как в данном случае роль наблюдателя
+								опосредована ролью рассказчика. Бодуэн дэ Куртенэ в своей основополагающей работе, упомянутой выше,
+								утверждает, что олицетворение интегрирует лирический субъект, также необходимо сказать
+								о сочетании метода апроприации художественных стилей прошлого с авангардистскими стратегиями.
+							</span>
+						</span>
+					</p>
+				</li>
+
+				<li class="question-answer__item">
+
+					<p class="question-answer__image-wrap">
+						<img src="img/teacher.jpg" class="question-answer__image">
+					</p>
+
+					<p class="question-answer-list__dialog">
+
+						<span class="question-answer-list__question">
+							— Какой исторический персонаж был бы самым скучным при встрече в реальной жизни?
+						</span>
+
+						<span class="question-answer-list__answer-text-wrap">
+							<span class="question-answer-list__answer-mentor-name">
+								Мария Иванова
+							</span>
+
+							<span class="question-answer-list__answer-text-mentor-address">
+								г. Москва, Школа №51
+							</span>
+
+							<span class="question-answer-list__answer-text">
+								Даже в этом коротком фрагменте видно, что художественная гармония наблюдаема.
+								Расположение эпизодов точно приводит реформаторский пафос.
+								Обсценная идиома, несмотря на то, что все эти характерологические черты отсылают не к
+								единому образу нарратора, редуцирует гекзаметр, так как в данном случае роль наблюдателя
+								опосредована ролью рассказчика. Бодуэн дэ Куртенэ в своей основополагающей работе, упомянутой выше,
+								утверждает, что олицетворение интегрирует лирический субъект, также необходимо сказать
+								о сочетании метода апроприации художественных стилей прошлого с авангардистскими стратегиями.
+							</span>
+						</span>
+					</p>
+				</li>
+
+				<li class="question-answer__item">
+
+					<p class="question-answer__image-wrap">
+						<img src="img/teacher.jpg" class="question-answer__image">
+					</p>
+
+					<p class="question-answer-list__dialog">
+
+						<span class="question-answer-list__question">
+							— Какой исторический персонаж был бы самым скучным при встрече в реальной жизни?
+						</span>
+
+						<span class="question-answer-list__answer-text-wrap">
+							<span class="question-answer-list__answer-mentor-name">
+								Мария Иванова
+							</span>
+
+							<span class="question-answer-list__answer-text-mentor-address">
+								г. Москва, Школа №51
+							</span>
+
+							<span class="question-answer-list__answer-text">
+								Даже в этом коротком фрагменте видно, что художественная гармония наблюдаема.
+								Расположение эпизодов точно приводит реформаторский пафос.
+								Обсценная идиома, несмотря на то, что все эти характерологические черты отсылают не к
+								единому образу нарратора, редуцирует гекзаметр, так как в данном случае роль наблюдателя
+								опосредована ролью рассказчика. Бодуэн дэ Куртенэ в своей основополагающей работе, упомянутой выше,
+								утверждает, что олицетворение интегрирует лирический субъект, также необходимо сказать
+								о сочетании метода апроприации художественных стилей прошлого с авангардистскими стратегиями.
+							</span>
+						</span>
+					</p>
+				</li>
+			</ul>
+
+		</section>
+
+	</main>
+	<footer class="footer">
+		<ul class="footer__content">
+			<li class="footer__item">
+				<span class="footer__info">
+					Культура для школьников
+				</span>
+
+				<span class="footer__info">
+					<i class="material-icons place__icon">place</i> г. Москва, ул. Мира, д.65
+				</span>
+
+				<span class="footer__info">
+					<i class="material-icons phone__icon">phone</i> +7 (957) 153-57-69
+				</span>
+
+				<span class="footer__info">
+					<i class="material-icons email__icon">email</i> school_culture@mail.ru
+				</span>
+			</li>
+
+			<li class="footer__item">
+				<a href="/" class="footer__link">Главная</a>
+				<a href="/" class="footer__link">Новости</a>
+				<a href="/" class="footer__link">Моя Россия</a>
+				<a href="/" class="footer__link">Культурное образование</a>
+				<a href="/" class="footer__link">Культурная карта</a>
+				<a href="/" class="footer__link">Культурная афиша</a>
+				<a href="/" class="footer__link">Наставничество</a>
+				<a href="/" class="footer__link">Вопрос-ответ</a>
+			</li>
+
+			<li class="footer__item">
+				<img src="img/eagle-empty.png" alt="">
+				<img src="img/eagle-fill.png" alt="">
+
+				<p class="footer__annotation">
+					<span class="footer__annotation__item">
+						Согласие об обработке персональных данных
+					</span>
+					<span class="footer__annotation__item">
+						© 2020 Министерство культуры Российской Федерации
+					</span>
+				</p>
+			</li>
+		</ul>
+
+	</footer>
+
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script type="text/javascript" src="script/slick/slick.js"></script>
+	<script type="text/javascript" src="script/main.js"></script>
+</body>
+</html>
