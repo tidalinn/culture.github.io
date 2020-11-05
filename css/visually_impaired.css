@@ -1,3 +1,13 @@
+.visually-impaired .b-c-w,
+.visually-impaired.b-c-w .header,
+.visually-impaired.b-c-w .header *,
+.visually-impaired.b-c-w .main,
+.visually-impaired.b-c-w .footer {
+  background-color: #ffffff;
+  color: #333333;
+  border-color: #8C57FC;
+}
+
 .visually-impaired .b-c-b,
 .visually-impaired.b-c-b .header,
 .visually-impaired.b-c-b .header *,

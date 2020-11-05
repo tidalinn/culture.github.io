@@ -87,6 +87,9 @@
   });
 
   $('.visually-impaired-color__item').click(function () {
+    $('.visually-impaired-color__item').removeClass('visually-impaired-color__item--active');
+    $(this).toggleClass('visually-impaired-color__item--active');
+
     saveToStore('color', $(this).data('color'));
     initImpaired();
   });

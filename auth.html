@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Авторизация — Культура для школьников</title>
+  <meta name="description" content="">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="icon" href="./img/favicon/favicon.ico">
+
+	<link rel="preload" href="fonts/OpenSans-Regular.woff" as="font" crossorigin="anonymous">
+	<link rel="preload" href="fonts/OpenSans-Bold.woff" as="font" crossorigin="anonymous">
+	<link rel="preload" href="fonts/OpenSans-SemiBold.woff" as="font" crossorigin="anonymous">
+	<link rel="preload" href="fonts/Lora-Regular.woff" as="font" crossorigin="anonymous">
+	<link href="fonts/iconfont/material-icons.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/reset.css">
+
+	<!-- slick -->
+	<link rel="stylesheet" href="script/slick/slick.css">
+	<link rel="stylesheet" href="script/slick/slick-theme.css">
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- файл стилей для слабовидящих -->
+	<link rel="stylesheet" href="css/visually_impaired.css">
+
+</head>
+<body>
+	<nav class="visually-impaired-navigation">
+
+		<div class="vertical-wrap">
+					<span class="visually-impaired-title">
+						Размер шрифта
+					</span>
+			<ul class="visually-impaired-font">
+				<li class="visually-impaired-font__item f-s-14" data-font="f-s-14">
+					А
+				</li>
+				<li class="visually-impaired-font__item f-s-18" data-font="f-s-18">
+					А
+				</li>
+				<li class="visually-impaired-font__item f-s-22" data-font="f-s-22">
+					А
+				</li>
+			</ul>
+		</div>
+
+		<div class="vertical-wrap">
+					<span class="visually-impaired-title">
+						Цвет сайта
+					</span>
+			<ul class="visually-impaired-color">
+				<li class="visually-impaired-color__item b-c-w" data-color="b-c-w">
+					Ц
+				</li>
+				<li class="visually-impaired-color__item b-c-b" data-color="b-c-b">
+					Ц
+				</li>
+				<li class="visually-impaired-color__item b-c-bl" data-color="b-c-bl">
+					Ц
+				</li>
+				<li class="visually-impaired-color__item b-c-y" data-color="b-c-y">
+					Ц
+				</li>
+				<li class="visually-impaired-color__item b-c-br" data-color="b-c-br">
+					Ц
+				</li>
+			</ul>
+		</div>
+
+		<div class="vertical-wrap">
+					<span class="visually-impaired-title">
+						Изображения
+					</span>
+			<ul class="visually-impaired-image">
+				<li class="visually-impaired-image__item visually-impaired-image__item--active" data-image="">
+					<i class="material-icons done__icon">done</i> Вкл.
+				</li>
+				<li class="visually-impaired-image__item" data-image="image-off">
+					<i class="material-icons clear__icon">clear</i> Выкл.
+				</li>
+			</ul>
+		</div>
+
+	</nav>
+
+	<header class="header">
+
+		<nav class="navigation">
+
+			<a href="index.html" class="logo-wrap">
+				<img src="./img/svg/header-logo.svg" alt="Логотип культуры для школьников" class="logo-image">
+			</a>
+
+			<div class="search">
+				<img class="search__icon" src="./img/svg/search-icon.svg">
+				<input type="text" class="search__input" placeholder="Поиск">
+				<!-- <i class="material-icons search__icon">search</i> -->
+			</div>
+
+			<ul class="main-menu">
+				<li class="navigation__item">
+					<a href="news.html" class="navigation__link">Новости</a>
+				</li>
+				<li class="navigation__item">
+					Культура <i class="material-icons keyboard_arrow_down__icon">keyboard_arrow_down</i>
+
+					<ul class="sub-menu sub-menu--culture">
+						<li class="sub-menu__item">
+							<a href="/" class="sub-menu__link">
+								<i class="material-icons school__icon">school</i>
+								Культурное образование
+							</a>
+						</li>
+						<li class="sub-menu__item">
+							<a href="/" class="sub-menu__link">
+								<i class="material-icons school__icon">account_balance</i>
+								Культурная карта
+							</a>
+						</li>
+						<li class="sub-menu__item">
+							<a href="/" class="sub-menu__link">
+								<i class="material-icons school__icon">event</i>
+								Культурная афиша
+							</a>
+						</li>
+						<li class="sub-menu__item">
+							<a href="/" class="sub-menu__link">
+								<i class="material-icons school__icon">flag</i>
+								Моя Россия
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="navigation__item">
+					Наставники <i class="material-icons keyboard_arrow_down__icon">keyboard_arrow_down</i>
+
+					<ul class="sub-menu sub-menu--mentoring">
+						<li class="sub-menu__item">
+							<a href="/" class="sub-menu__link">
+								<i class="material-icons school__icon">group</i>
+								Наставники
+							</a>
+						</li>
+						<li class="sub-menu__item">
+							<a href="/" class="sub-menu__link">
+								<i class="material-icons school__icon">help</i>
+								Вопрос-ответ с наставником
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<button class="visually-impaired-menu-button">
+				<i class="material-icons school__icon">remove_red_eye</i>
+			</button>
+
+			<div class="login">
+				<a class="login__link">
+					<img class="login__icon" src="./img/svg/auth-login-icon.svg">
+					<p class="login__name">Войти</p>
+				</a>				
+			</div>
+
+			<div class="burger__navigation hidden">
+				<img class="burger__logo" src="./img/svg/header-logo.svg">
+				
+				<ul class="burger__list">
+					<li class="burger__item">
+						<a href="index.html" class="burger__link">Главная</a>
+					</li>
+					<li class="burger__item">
+						<a href="news.html" class="burger__link">Новости</a>
+					</li>
+					<li class="burger__item">Культура 
+						<i class="material-icons keyboard_arrow_down__icon">keyboard_arrow_down</i>
+						<i class="material-icons keyboard_arrow_up__icon hidden">keyboard_arrow_up</i>
+
+						<ul class="burger__submenu hidden">
+							<li class="burger__item">
+								<a href="/" class="burger__link">
+									Культурное образование
+								</a>
+							</li>
+							<li class="burger__item">
+								<a href="/" class="burger__link">
+									Культурная карта
+								</a>
+							</li>
+							<li class="burger__item">
+								<a href="/" class="burger__link">
+									Культурная афиша
+								</a>
+							</li>
+							<li class="burger__item">
+								<a href="/" class="burger__link">
+									Моя Россия
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="burger__item">Наставники 
+						<i class="material-icons keyboard_arrow_down__icon">keyboard_arrow_down</i>
+						<i class="material-icons keyboard_arrow_up__icon hidden">keyboard_arrow_up</i>
+
+						<ul class="burger__submenu hidden">
+							<li class="burger__item">
+								<a href="/" class="burger__link">
+									Наставники
+								</a>
+							</li>
+							<li class="burger__item">
+								<a href="/" class="burger__link">
+									Вопрос-ответ с наставником
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<i class="material-icons menu__burger-close__icon">close</i>
+			</div>
+
+		</nav>
+	</header>
+
+	<main class="main">
+		<div class="auth__wrapper">
+			<h1 class="auth__title">Вход в систему</h1>
+			<form class="auth__form">
+				<label>
+					<img class="form__image image-login" src="./img/svg/auth-login.svg">
+				    <input class="form__login" name="login" type="text" placeholder="Логин">
+				</label>
+				<label>
+					<img class="form__image image-password" src="./img/svg/auth-password.svg">
+				    <input class="form__password" name="password" type="text" placeholder="Пароль">
+				</label>
+				<a class="form__link" href="recover.html">Забыли логин или пароль?</a>
+				<button class="form__button button">Войти</button>
+			</form>
+			<a class="auth__link" href="register.html">Регистрация</a>
+			<p class="auth__other">или войдите через</p>
+			<ul class="auth__socials">
+				<li class="socials__item">
+					<a class="socials__link" href="https://google.ru">
+						<img class="socials__image" src="./img/svg/auth-google.svg">
+					</a>
+				</li>
+				<li class="socials__item">
+					<a class="socials__link" href="https://vk.ru">
+						<img class="socials__image" src="./img/svg/auth-vk.svg">
+					</a>
+				</li>
+				<li class="socials__item">
+					<a class="socials__link" href="https://yandex.ru">
+						<img class="socials__image" src="./img/svg/auth-yandex.svg">
+					</a>
+				</li>
+				<li class="socials__item">
+					<a class="socials__link" href="https://mail.ru">
+						<img class="socials__image" src="./img/svg/auth-mail.svg">
+					</a>
+				</li>
+				<li class="socials__item">
+					<a class="socials__link" href="https://facebook.ru">
+						<img class="socials__image" src="./img/svg/auth-fb.svg">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<ul class="footer__content">
+			<li class="footer__item">
+				<img class="footer__logo" src="./img/svg/footer-logo.svg">
+
+				<span class="footer__info">
+					<i class="material-icons place__icon">place</i> г. Москва, ул. Мира, д.65
+				</span>
+
+				<span class="footer__info">
+					<i class="material-icons phone__icon">phone</i> +7 (957) 153-57-69
+				</span>
+
+				<span class="footer__info">
+					<i class="material-icons email__icon">email</i> school_culture@mail.ru
+				</span>
+			</li>
+
+			<li class="footer__item">
+				<a href="/" class="footer__link">Новости</a>
+				<a href="/" class="footer__link">Моя Россия</a>
+				<a href="/" class="footer__link">Культурное образование</a>
+				<a href="/" class="footer__link">Культурная карта</a>
+				<a href="/" class="footer__link">Культурная афиша</a>
+				<a href="/" class="footer__link">Наставники</a>
+				<a href="/" class="footer__link">Вопрос-ответ</a>
+			</li>
+
+			<li class="footer__item">
+				<img src="./img/svg/eagle-white.svg" alt="Министерство культуры">
+				<img src="img/svg/eagle-color.svg" alt="Министерство просвящения">
+
+				<p class="footer__annotation">
+					<span class="footer__annotation__item">
+						Согласие об обработке персональных данных
+					</span>
+					<span class="footer__annotation__item">
+						© 2020 Министерство культуры Российской Федерации
+					</span>
+				</p>
+			</li>
+		</ul>
+
+	</footer>
+
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script type="text/javascript" src="script/slick/slick.js"></script>
+	<script type="text/javascript" src="script/main.js"></script>
+	<script type="text/javascript" src="script/logics.js"></script>
+</body>
+</html>

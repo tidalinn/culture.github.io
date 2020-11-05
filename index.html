@@ -10,10 +10,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <link rel="preload" href="fonts/OpenSans-Regular.woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/OpenSans-Bold.woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/OpenSans-SemiBold.woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/Lora-Regular.woff" as="font" crossorigin="anonymous">
+	<link rel="icon" href="./img/favicon/favicon.ico">
+
+	<link rel="preload" href="fonts/OpenSans-Regular.woff" as="font" crossorigin="anonymous">
+	<link rel="preload" href="fonts/OpenSans-Bold.woff" as="font" crossorigin="anonymous">
+	<link rel="preload" href="fonts/OpenSans-SemiBold.woff" as="font" crossorigin="anonymous">
+	<link rel="preload" href="fonts/Lora-Regular.woff" as="font" crossorigin="anonymous">
 	<link href="fonts/iconfont/material-icons.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/reset.css">
@@ -53,7 +55,7 @@
 						Цвет сайта
 					</span>
 			<ul class="visually-impaired-color">
-				<li class="visually-impaired-color__item" data-color="">
+				<li class="visually-impaired-color__item b-c-w" data-color="b-c-w">
 					Ц
 				</li>
 				<li class="visually-impaired-color__item b-c-b" data-color="b-c-b">
@@ -92,22 +94,16 @@
 		<nav class="navigation">
 
 			<a href="index.html" class="logo-wrap">
-				<img src="./img/logo.png" alt="Логотип культуры для школьников" class="logo-image">
-				<span class="logo-title">
-					Культура<br> для школьников
-				</span>
+				<img src="./img/svg/header-logo.svg" alt="Логотип культуры для школьников" class="logo-image">
 			</a>
 
 			<div class="search">
+				<img class="search__icon" src="./img/svg/search-icon.svg">
 				<input type="text" class="search__input" placeholder="Поиск">
-				<i class="material-icons search__icon">search</i>
+				<!-- <i class="material-icons search__icon">search</i> -->
 			</div>
 
-
 			<ul class="main-menu">
-				<li class="navigation__item">
-					<a href="index.html" class="navigation__link">Главная</a>
-				</li>
 				<li class="navigation__item">
 					<a href="news.html" class="navigation__link">Новости</a>
 				</li>
@@ -140,10 +136,9 @@
 							</a>
 						</li>
 					</ul>
-
 				</li>
 				<li class="navigation__item">
-					Наставничество <i class="material-icons keyboard_arrow_down__icon">keyboard_arrow_down</i>
+					Наставники <i class="material-icons keyboard_arrow_down__icon">keyboard_arrow_down</i>
 
 					<ul class="sub-menu sub-menu--mentoring">
 						<li class="sub-menu__item">
@@ -165,6 +160,13 @@
 			<button class="visually-impaired-menu-button">
 				<i class="material-icons school__icon">remove_red_eye</i>
 			</button>
+
+			<div class="login hidden">
+				<a class="login__link">
+					<img class="login__icon" src="./img/svg/auth-login-icon.svg">
+					<p class="login__name" href="auth.html">Войти</p>
+				</a>				
+			</div>
 
 			<ul class="account">
 				<li class="account__item">
@@ -197,6 +199,67 @@
 					4,9
 				</li>
 			</ul>
+			<img class="account__image" src="./img/svg/account-default.svg">
+
+			<i class="material-icons menu__burger-open__icon">menu</i>
+
+			<div class="burger__navigation hidden">
+				<img class="burger__logo" src="./img/svg/header-logo.svg">
+				
+				<ul class="burger__list">
+					<li class="burger__item">
+						<a href="index.html" class="burger__link">Главная</a>
+					</li>
+					<li class="burger__item">
+						<a href="news.html" class="burger__link">Новости</a>
+					</li>
+					<li class="burger__item">Культура 
+						<i class="material-icons keyboard_arrow_down__icon">keyboard_arrow_down</i>
+						<i class="material-icons keyboard_arrow_up__icon hidden">keyboard_arrow_up</i>
+
+						<ul class="burger__submenu hidden">
+							<li class="burger__item">
+								<a href="/" class="burger__link">
+									Культурное образование
+								</a>
+							</li>
+							<li class="burger__item">
+								<a href="/" class="burger__link">
+									Культурная карта
+								</a>
+							</li>
+							<li class="burger__item">
+								<a href="/" class="burger__link">
+									Культурная афиша
+								</a>
+							</li>
+							<li class="burger__item">
+								<a href="/" class="burger__link">
+									Моя Россия
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="burger__item">Наставники 
+						<i class="material-icons keyboard_arrow_down__icon">keyboard_arrow_down</i>
+						<i class="material-icons keyboard_arrow_up__icon hidden">keyboard_arrow_up</i>
+
+						<ul class="burger__submenu hidden">
+							<li class="burger__item">
+								<a href="/" class="burger__link">
+									Наставники
+								</a>
+							</li>
+							<li class="burger__item">
+								<a href="/" class="burger__link">
+									Вопрос-ответ с наставником
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<i class="material-icons menu__burger-close__icon">close</i>
+			</div>
 
 		</nav>
 	</header>
@@ -212,7 +275,7 @@
 
 				</div>
 				<span class="promo__title--slider">
-					Смотри вебинары и общайся  с наставниками!
+					Смотри вебинары и общайся с наставниками!
 				</span>
 			</div>
 		</section>
@@ -246,41 +309,6 @@
 			<img src="img/map.png" class="interactive-map">
 		</section>
 
-		<section class="partners">
-			<h2 class="partners__h2">
-				Партнеры
-			</h2>
-
-			<ul class="partners-list">
-				<li class="partners-list__item">
-					<img src="img/partner.png" alt="">
-				</li>
-				<li class="partners-list__item">
-					<img src="img/partner.png" alt="">
-				</li>
-				<li class="partners-list__item">
-					<img src="img/partner.png" alt="">
-				</li>
-
-				<li class="partners-list__item">
-					<img src="img/partner.png" alt="">
-				</li>
-				<li class="partners-list__item">
-					<img src="img/partner.png" alt="">
-				</li>
-				<li class="partners-list__item">
-					<img src="img/partner.png" alt="">
-				</li>
-
-				<li class="partners-list__item">
-					<img src="img/partner.png" alt="">
-				</li>
-				<li class="partners-list__item">
-					<img src="img/partner.png" alt="">
-				</li>
-			</ul>
-		</section>
-
 		<section class="last-news">
 			<h2 class="news__h2">
 				Последние новости
@@ -293,7 +321,10 @@
 					<p class="news-list__description">
 						Смысл абсурда, творческие лаборатории и социолингвистика
 					</p>
-					<a href="https://www.google.ru/" class="news-list__link news-list__link--purple" target="_blank">Читать далее</a>
+					<a href="https://www.google.ru/" class="news-list__link news-list__link--purple" target="_blank">
+						Читать далее
+						<i class="material-icons keyboard_arrow_right__icon">keyboard_arrow_right</i>
+					</a>
 				</li>
 				<li class="news-list__item news-list__item--blue">
 					<img src="img/news-girl.png" class="news-list__image">
@@ -301,7 +332,10 @@
 					<p class="news-list__description">
 						Смысл абсурда, творческие лаборатории и социолингвистика
 					</p>
-					<a href="https://www.google.ru/" class="news-list__link news-list__link--blue" target="_blank">Читать далее</a>
+					<a href="https://www.google.ru/" class="news-list__link news-list__link--blue" target="_blank">
+						Читать далее
+						<i class="material-icons keyboard_arrow_right__icon">keyboard_arrow_right</i>
+					</a>
 				</li>
 				<li class="news-list__item news-list__item--yellow">
 					<img src="img/news-boy-and-girl.png" class="news-list__image">
@@ -309,28 +343,10 @@
 					<p class="news-list__description">
 						Смысл абсурда, творческие лаборатории и социолингвистика
 					</p>
-					<a href="https://www.google.ru/" class="news-list__link news-list__link--yellow" target="_blank">Читать далее</a>
-				</li>
-			</ul>
-		</section>
-
-		<section class="translation">
-			<h2 class="translation__h2">
-				Прямой эфир
-			</h2>
-
-			<ul class="translation-area">
-				<li class="translation-video">
-					<span class="translation-title">
-						Название вебинара
-					</span>
-					<img src="img/translation.png" alt="">
-				</li>
-				<li class="translation-message">
-					<span class="translation-title" style="text-align: center; padding-left: 0">
-						Комментарии
-					</span>
-					<img src="img/message.png" alt="" style="width: 330px;margin-top: 5px">
+					<a href="https://www.google.ru/" class="news-list__link news-list__link--yellow" target="_blank">
+						Читать далее
+						<i class="material-icons keyboard_arrow_right__icon">keyboard_arrow_right</i>
+					</a>
 				</li>
 			</ul>
 		</section>
@@ -522,16 +538,71 @@
 					</p>
 				</li>
 			</ul>
+		</section>
 
+		<section class="translation">
+			<h2 class="translation__h2">
+				Прямой эфир
+			</h2>
+
+			<ul class="translation-area">
+				<li class="translation-video">
+					<span class="translation-title">
+						Название вебинара
+					</span>
+				</li>
+				<li class="translation-message">
+					<span class="translation-title" style="text-align: center; padding-left: 0">
+						Комментарии
+					</span>
+				</li>
+			</ul>
+			<div class="video__wrapper">
+				<div class="video__item"></div>
+			    <iframe class="video__element" src="https://www.youtube.com/embed/Bi4G-Pqyi_o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+			</div>
+		</section>
+
+		<section class="partners">
+			<h2 class="partners__h2">
+				Партнеры
+			</h2>
+
+			<ul class="partners-list">
+				<li class="partners-list__item">
+					<img src="img/partner.png" alt="">
+				</li>
+				<li class="partners-list__item">
+					<img src="img/partner.png" alt="">
+				</li>
+				<li class="partners-list__item">
+					<img src="img/partner.png" alt="">
+				</li>
+
+				<li class="partners-list__item">
+					<img src="img/partner.png" alt="">
+				</li>
+				<li class="partners-list__item">
+					<img src="img/partner.png" alt="">
+				</li>
+				<li class="partners-list__item">
+					<img src="img/partner.png" alt="">
+				</li>
+
+				<li class="partners-list__item">
+					<img src="img/partner.png" alt="">
+				</li>
+				<li class="partners-list__item">
+					<img src="img/partner.png" alt="">
+				</li>
+			</ul>
 		</section>
 
 	</main>
 	<footer class="footer">
 		<ul class="footer__content">
 			<li class="footer__item">
-				<span class="footer__info">
-					Культура для школьников
-				</span>
+				<img class="footer__logo" src="./img/svg/footer-logo.svg">
 
 				<span class="footer__info">
 					<i class="material-icons place__icon">place</i> г. Москва, ул. Мира, д.65
@@ -547,19 +618,18 @@
 			</li>
 
 			<li class="footer__item">
-				<a href="/" class="footer__link">Главная</a>
 				<a href="/" class="footer__link">Новости</a>
 				<a href="/" class="footer__link">Моя Россия</a>
 				<a href="/" class="footer__link">Культурное образование</a>
 				<a href="/" class="footer__link">Культурная карта</a>
 				<a href="/" class="footer__link">Культурная афиша</a>
-				<a href="/" class="footer__link">Наставничество</a>
+				<a href="/" class="footer__link">Наставники</a>
 				<a href="/" class="footer__link">Вопрос-ответ</a>
 			</li>
 
 			<li class="footer__item">
-				<img src="img/eagle-empty.png" alt="">
-				<img src="img/eagle-fill.png" alt="">
+				<img src="./img/svg/eagle-white.svg" alt="Министерство культуры">
+				<img src="img/svg/eagle-color.svg" alt="Министерство просвящения">
 
 				<p class="footer__annotation">
 					<span class="footer__annotation__item">
@@ -577,5 +647,6 @@
 	<script type="text/javascript" src="script/jquery.js"></script>
 	<script type="text/javascript" src="script/slick/slick.js"></script>
 	<script type="text/javascript" src="script/main.js"></script>
+	<script type="text/javascript" src="script/logics.js"></script>
 </body>
 </html>
